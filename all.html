@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li ><a href="/all.html" target="_self" >All Tasks </a></li>
+        </ul>
+    </div>
+    </nav>
+    <h1>All Tasks</h1>
+    <section id="all"></section>
+    <script>
+        let sec1=document.getElementById("all");
+       
+       if(localStorage.length==0){
+        const newp = document.createElement("p");
+       newp.innerText="No work....Enjoy!!";
+       newp.style.textAlign="center";
+       sec1.appendChild(newp);
+       }
+       for( j=1;j<=localStorage.length;j++){
+       
+       const space=document.createElement("ul");
+       let newdiv=document.createElement("li");
+       const newp = document.createElement("p");
+       const line=document.createElement("div");
+       line.setAttribute("id","line");
+       newdiv.style.padding="10px";
+       
+       sec1.appendChild(newdiv);
+       
+       newdiv.appendChild(space);
+       newdiv.appendChild(newp);
+       newdiv.appendChild(line);
+       newp.innerText=localStorage.getItem(j);
+       }
+    </script>
+</body>
+</html>

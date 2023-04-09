@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210828/pngtree-frosted-glass-texture-frosted-white-gray-background-image_771741.jpg");
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position:top;
+}
+*{
+    margin:0px;
+}
+nav {
+    background-color: rgb(148, 152, 153);
+    height:50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+  
+}
+nav ul{
+    list-style-type: none;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+}
+nav ul li{
+    padding: 0 12px;
+   text-transform: none;
+   text-decoration: none;
+}
+li{
+    text-decoration: none;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+h1{
+    text-align:center;
+    color:black;
+    font-size:xx-large;
+    text-decoration:underline;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.input-text{
+    text-align: center;
+   
+}
+#to-do{
+    padding:15px;
+    width:800px;
+    letter-spacing: 2px;
+    border-radius:30px;
+
+}
+#submit{
+    padding:10px;
+    width:100px;
+    border-radius:30px;
+    
+}
+
+#card{
+    height:100px;
+    width:80px;
+    border: 2px solid black;
+    font-family: 'Alkatra', cursive;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:200px;
+    height:200px;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+    
+}
+
+#card button{
+   justify-self: flex-end;
+   
+}
+
+#all{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  
+    width:100%;
+    height: 80px;
+    font-size: 30px;
+}
+#list{
+    width:100%;
+    background-color: aqua;
+}
+#line{
+    width:100%;
+   
+    margin-bottom:10px;
+    border:1px solid black;
+}
+img{
+    width:300px;
+    height: 300px;
+}
