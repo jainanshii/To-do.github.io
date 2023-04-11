@@ -75,11 +75,7 @@ function remove(){
         }
     }
 }
-function incompleted(){
-    const x=document.getElementById("incomp")
-   x.style.display="block";
-   
-}
+
 function completed(){
     let x=document.getElementById("comp");
     complete.style.display="block";
@@ -87,9 +83,12 @@ function completed(){
     y.style.display="block";
 }
 window.onload=(e)=>{
-  for(var j=1;j<=localStorage.length;j++){
-    for(var k=1;k<sessionStorage.length+1;k++){
-    if(sessionStorage.getItem(k)==(localStorage.getItem(j))){
+    const x=document.getElementById("incomp")
+   x.style.display="block";
+   
+  for(var j=1;j<=sessionStorage.length+1;j++){
+    for(var k=1;k<=localStorage.length;k++){
+    if(sessionStorage.getItem(j)==(localStorage.getItem(k))){
         const space=document.createElement("span");
         const newdiv=document.createElement("div");
         const newp = document.createElement("p");
@@ -98,7 +97,7 @@ window.onload=(e)=>{
         dltbutton.addEventListener("click",remove);
         checkbox.type="checkbox";
         space.innerText="";
-        newp.innerText=sessionStorage.getItem(k);
+        newp.innerText=sessionStorage.getItem(j);
         dltbutton.innerText="Delete";
         newdiv.setAttribute("id","card");
         newdiv.appendChild(space);
@@ -114,4 +113,3 @@ window.onload=(e)=>{
 }
   }
 }
-
